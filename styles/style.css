@@ -9,18 +9,22 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .container {
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 hr {
     border: 1px solid #D1D1D1;
-    /* margin-top: 21px; */
+    margin-bottom: 22px;
 }
 
 /* Style Top PLayers  */
@@ -57,3 +61,104 @@ hr {
     font-size: 18px;
     font-weight: 500;
 }
+
+/* ----------------------
+     top blogs styles 
+------------------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog-author a {
+    color: #562EFF;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* --------------------------
+     courses style  
+------------------------------*/
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+}
+
+.course {
+    Width: 252.42px;
+    Height: 269.79px;
+    padding: 13px;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.15);
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.fa-clock {
+    margin-right: 5.42px;
+}
+
+.course-duration {
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    /* padding: 5px; */
+    border-radius: 14.69px;
+    height: 29.38px;
+    width: 94.83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------
+ Media Queries
+ --------------------------*/
+
+/* Mobile Devices */
