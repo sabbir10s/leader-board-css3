@@ -238,9 +238,12 @@ hr {
 
     .nav-content,
     .container,
-    .blog,
-    .course {
+    .blog {
         width: 100%;
+    }
+
+    .course {
+        width: 95%;
     }
 
     .players {
