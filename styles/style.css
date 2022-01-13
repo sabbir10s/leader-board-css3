@@ -7,6 +7,63 @@ body {
     background-color: #F3F1FF;
 }
 
+.navbar {
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 900px;
+    height: 94px;
+    display: grid;
+    grid-template-row: repeat(2, 1fr);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 51px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-left: 16px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 36px;
+
+}
+
+.nav-content img {
+    width: 51px;
+    height: 51px;
+    margin-left: 36px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -165,7 +222,12 @@ hr {
 /* Mobile Devices */
 
 @media only screen and (max-width:688px) {
+    .nav-container {
+        height: 120px;
+        align-items: center;
+    }
 
+    .nav-container,
     .container,
     .blog,
     .course {
@@ -181,6 +243,7 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .nav,
     .player,
     .blog {
         flex-direction: column;
@@ -192,10 +255,15 @@ hr {
        -------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px) {
 
+
     .container,
     .blog,
     .course {
         width: 100%;
+    }
+
+    .nav-container {
+        padding: 0 15px;
     }
 
     .players {
