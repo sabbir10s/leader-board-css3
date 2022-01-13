@@ -227,7 +227,16 @@ hr {
         align-items: center;
     }
 
-    .nav-container,
+    .nav-content {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav-content a {
+        margin-left: 0;
+    }
+
+    .nav-content,
     .container,
     .blog,
     .course {
